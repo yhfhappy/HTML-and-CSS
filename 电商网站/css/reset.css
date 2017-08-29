@@ -1,0 +1,37 @@
+/*margin的样式初始化*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd {
+    margin: 0;
+}
+
+/*padding的样式初始化*/
+ul,ol {
+    padding: 0;
+}
+
+/*列表的样式初始化*/
+ul,ol,li {
+    list-style-type: none;
+}
+
+/*font-style的样式初始化*/
+em {
+    font-style: normal;
+}
+
+/*下划线的样式初始化*/
+a {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+}
+
+/* 清浮动 */
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+};
+
+.clearfix{*zoom:1;}
