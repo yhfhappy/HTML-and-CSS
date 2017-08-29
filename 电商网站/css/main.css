@@ -1,0 +1,20 @@
+/* 公用 */
+.comWidth{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.leftArea{
+    float: left;
+}
+
+.rightArea{
+    float: right;
+}
+
+.topBar{
+    height: 31px;
+    line-height: 31px;
+    background-color: #F7F7F7;
+}
