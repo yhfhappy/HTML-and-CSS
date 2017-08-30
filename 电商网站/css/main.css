@@ -180,7 +180,7 @@ body{
 }
 
 .shopClass_item{
-    padding: 14px 10px;
+    padding: 13px 10px;
     border-bottom: 1px solid #3487F2;
     border-top: 1px solid #5AA1FE;
 }
@@ -406,6 +406,10 @@ body{
 /* shopTit END */
 
 /* shopList START */
+.shopList{
+    margin-bottom: 15px;
+}
+
 .shopList .leftArea{
     width: 190px;
 }
@@ -420,7 +424,7 @@ body{
 /* shopList END */
 
 /* shopList TOP START */
-.shopList_top,.shopItem_sm{
+.shopList_top,.shopList_sm{
     margin-right: -4px;
 }
 
@@ -458,11 +462,10 @@ body{
 /* shopList SM START */
 .shopItem_sm{
     width: 202px;
-    height: 116px;
+    height: 106px;
     border-right: 1px solid #999;
-    /* 以下两行设置图片垂直居中 */
-    display: table-cell;
-    vertical-align:middle;
+    float: left;
+    padding-top: 10px;
 }
 
 .shopItem_smImg{
@@ -475,16 +478,59 @@ body{
 .shopItem_smImg img{
     width: 95px;
     height: 95px;
-    vertical-align: middle;
 }
 
 .shopItem_text{
-    width: 107px;
-    padding-top: 16px;
+    width: 100px;
+    padding-top: 18px;
     float: left;
 }
 
 .shopItem_text p{
     color: #FF8D2F;
 }
+
+.shopItem_text h3{
+    font-size: 16px;
+    font-weight: normal;
+    color: #181818;
+    font-family: "Microsoft YaHei","微软雅黑";
+    line-height: 30px;
+}
 /* shopList SM END */
+
+/* footer START */
+.footer{
+    text-align: center;
+    line-height: 24px;
+    background-color: #D4D4D4;
+    padding: 50px;
+}
+
+.footer i{
+    font-style: normal;
+    margin: 0 5px;
+}
+
+.footer a{
+    color: #000;
+}
+
+.footer a:hover{
+    color: #F60;
+}
+
+.web{
+    padding-top: 30px;
+}
+
+.web img{
+    margin: 0 12px;
+}
+/* footer END */
+
+/* 这个DIV是用来撑高度的 START */
+.hr25{
+    height: 25px;
+}
+/* 这个DIV是用来撑高度的 END */
