@@ -13,8 +13,54 @@
     float: right;
 }
 
+/* topBar START */
 .topBar{
     height: 31px;
     line-height: 31px;
     background-color: #F7F7F7;
 }
+.collection{
+    background: url(../images/icon/collection.jpg) left center no-repeat;
+    padding-left: 19px;
+    font-weight: bold;
+}
+
+.topBar a:hover{
+    color: red;
+}
+/* topBar END */
+
+/* Logo START */
+.logoBar{
+    height: 85px;
+    background: #1D7AD9;
+}
+
+.logo{
+    padding-left: 41px;
+    padding-top: 13px;
+}
+/* Logo END */
+
+/* search START */
+.search_box{
+    width: 430px;
+    padding-top: 23px;
+    padding-left: 185px;
+}
+
+.search_text{
+    width: 350px;
+    height: 35px;
+    padding: 0 5px;
+}
+
+.search_btn{
+    width: 70px;
+    height: 35px;
+    color: #FFF;
+    font-size: 14px;
+    font-family: "Microsoft YaHei","微软雅黑";
+    background-color: #FF8C00;
+}
+/* search END */

@@ -21,10 +21,12 @@ em {
 /*下划线的样式初始化*/
 a {
     text-decoration: none;
+    color: #656565; /*注意：网站链接很多都是一个颜色，在此设置*/
 }
 
-input {
+input,select,textarea {
     border: none;
+    outline: none;
 }
 
 /* 清浮动 */
@@ -35,3 +37,12 @@ input {
 };
 
 .clearfix{*zoom:1;}
+
+/* 公共 */
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
