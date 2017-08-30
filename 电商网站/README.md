@@ -17,8 +17,10 @@
 8. 感觉嵌套有点深；
 9. 内联元素在浮动之后就支持宽高了；
 10. 设置图片垂直居中：
-    > display: table-cell;
+    ```
+    display: table-cell;
     vertical-align:middle;
+    ```
 
 ## 其它
 1. CSS选择器尽量减少层次，减少重复查找的次数；
