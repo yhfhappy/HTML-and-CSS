@@ -49,12 +49,26 @@
     padding-left: 185px;
 }
 
+/* IE6下解决方法一：
+.search_text{
+    width: 350px;   
+    height: 14px;
+    line-height: 14px;
+    padding: 11px 5px 10px;   
+    background-color: #FFF;
+}
+*/
+
+/* IE6下解决方法二：*/
 .search_text{
     width: 350px;
     height: 35px;
-    padding: 0 5px;
+    /*CSS hack：\9代表所有IE浏览器*/
+    line-height: 35px\9;
+    padding: 5px 0;
     background-color: #FFF;
 }
+
 
 .search_btn{
     width: 70px;
