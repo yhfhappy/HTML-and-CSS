@@ -47,3 +47,6 @@ input,select,textarea {
 .fr{
     float: right;
 }
+
+.show{display: block;}
+.hide{display: none;}

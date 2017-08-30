@@ -145,7 +145,7 @@ body{
     margin-left: 11px;
 }
 
-.nav,.shopClass{
+.nav,.shopClass h3{
     font-family: "Microsoft YaHei","微软雅黑";
 }
 
@@ -198,6 +198,7 @@ body{
     text-align: center;
     line-height: 20px;
     text-decoration: underline;
+    margin-left: 10px;
 }
 
 .shopClass_item .b{
@@ -210,4 +211,90 @@ body{
 .shopClass_item a{
     color: #FFF;
 }
+
+.shopClass_item a:hover{
+    text-decoration: underline;
+}
+
 /* shopClass_item END */
+
+/* shopClass_list START */
+.shopClass_list{
+    width: 568px;
+    /*height: 378px;*/
+    border: 1px solid #DDD;
+    position: absolute;
+    top: 35px;
+    left: 190px;
+}
+
+.shopClass_cont{
+    padding: 0 20px;
+}
+
+.shopList_item{
+    padding: 10px 0;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+/* shopClass_item active START */
+.shopClass_active{
+    background-color: #FFF;   
+    border-left: 1px solid #4593FD;
+}
+
+.shopClass_active a{
+    color: #000;
+}
+
+.shopClass_active .aLink{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.shopClass_active dt{
+    background: none;
+}
+
+/* shopClass_item active END */
+
+.shopList_item dt{
+    color: #4B87D9;
+    font-weight: bold;
+    height: 14px;
+    line-height: 24px;
+}
+
+.shopList_item dd{
+    padding-left: 68px;
+    line-height: 24px;
+    margin-top: -14px;
+
+}
+
+.shopList_item dd a{
+    margin-right: 12px;
+}
+
+.shopList_links{
+    padding: 15px 0;
+}
+
+.shopList_links a{
+    color: #FFF;
+    background-color: #2785E6;
+    height: 26px;
+    line-height: 26px;
+    display: inline-block;
+    padding: 0 14px 0 8px;
+    margin-right: 10px;
+}
+
+.shopList_links span{
+    width: 11px;
+    height: 7px;
+    display: inline-block;
+    background: url(../images/icon/shopList_links.gif) left center no-repeat;
+    margin-left: 7px;
+}
+/* shopClass_list END */
