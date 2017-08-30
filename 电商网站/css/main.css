@@ -300,20 +300,24 @@ body{
 /* shopClass_list END */
 
 /* banner START */
+.banner{
+    margin-bottom: 15px;
+}
+
 .banner_bar{
-    width: 810px;
-    height: 326px;
+    /* width: 810px;
+    height: 326px; */
     float: right;
     position: relative;
+    overflow: hidden;
 }
 
 .imgBox{
-    width: 810px;
-    height: 326px;
+    /* width: 810px;
+    height: 326px; */
     position: absolute;
     top: 0;
     left: 0;
-    overflow: hidden;
 }
 
 .imgBox li{
@@ -321,8 +325,8 @@ body{
 }
 
 .imgBox img{
-    width: 810px;
-    height: 326px;
+    /* width: 810px;
+    height: 326px; */
     display: block;
 }
 
@@ -347,4 +351,140 @@ body{
     background-color: #FF7700;
 }
 
+.banner_big,.banner_big img{
+    width: 810px;
+    height: 326px;
+}
+
+.banner_big .imgBox{
+    width: 1620px;
+    height: 326px;
+}
+
+.banner_sm,.banner_sm img{
+    width: 190px;
+    height: 400px;
+}
+
+.banner_sm .imgBox{
+    width: 380px;
+    height: 400px;
+}
+
 /* banner END */
+
+/* shopTit START */
+.shopTit{
+    height: 44px;
+    font-family: "Microsoft YaHei","微软雅黑";
+    line-height: 44px;
+    margin-bottom: 15px;
+}
+
+.shopTit h3{
+    font-size: 24px;
+    font-weight: normal;
+    float: left;
+    padding-left: 15px;
+}
+
+.icon{
+    width: 44px;
+    height: 44px;
+    background: url(../images/icon/shopTit_icon.gif) left top no-repeat;
+    float: left;
+}
+
+.more{
+    float: right;
+    font-family: "宋体";
+}
+
+.more:hover{
+    text-decoration: underline;
+}
+/* shopTit END */
+
+/* shopList START */
+.shopList .leftArea{
+    width: 190px;
+}
+
+.shopList .rightArea{
+    width: 808px;
+    height: 396px;
+    border: 1px solid #999;
+    border-bottom: 3px solid #FF7201;
+    overflow: hidden;
+}
+/* shopList END */
+
+/* shopList TOP START */
+.shopList_top,.shopItem_sm{
+    margin-right: -4px;
+}
+
+.shop_item{
+    width: 202px;
+    height: 279px;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    text-align: center;
+    font-family: "Microsoft YaHei","微软雅黑";
+}
+
+.shop_img{
+    height: 218px;
+}
+
+.shop_img img{
+    width: 100%;
+    height: 218px;
+    display: block;
+}
+
+.shop_item h3{
+    font-size: 16px;
+    
+}
+
+.shop_item p{
+    font-size: 14px;
+    color: #FF8D2F;
+    line-height: 21px;
+}
+/* shopList TOP END */
+
+/* shopList SM START */
+.shopItem_sm{
+    width: 202px;
+    height: 116px;
+    border-right: 1px solid #999;
+    /* 以下两行设置图片垂直居中 */
+    display: table-cell;
+    vertical-align:middle;
+}
+
+.shopItem_smImg{
+    width: 95px;
+    height: 95px;
+    text-align: center;
+    float: left;
+}
+
+.shopItem_smImg img{
+    width: 95px;
+    height: 95px;
+    vertical-align: middle;
+}
+
+.shopItem_text{
+    width: 107px;
+    padding-top: 16px;
+    float: left;
+}
+
+.shopItem_text p{
+    color: #FF8D2F;
+}
+/* shopList SM END */
