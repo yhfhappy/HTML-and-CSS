@@ -27,6 +27,7 @@ a {
 input,select,textarea {
     border: none;
     outline: none;
+    background:none;
 }
 
 /* 清浮动 */
