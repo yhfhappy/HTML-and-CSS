@@ -5,6 +5,10 @@
     margin-right: auto;
 }
 
+body{
+    font-size: 12px;
+}
+
 .leftArea{
     float: left;
 }
@@ -37,8 +41,8 @@
 }
 
 .logo{
-    padding-left: 41px;
-    padding-top: 13px;
+    padding-left: 18px;
+    padding-top: 5px;
 }
 /* Logo END */
 
@@ -65,7 +69,7 @@
     height: 35px;
     /*CSS hack：\9代表所有IE浏览器*/
     line-height: 35px\9;
-    padding: 5px 0;
+    padding: 0 5px;
     background-color: #FFF;
 }
 
@@ -79,3 +83,131 @@
     background-color: #FF8C00;
 }
 /* search END */
+
+/* shopCar START */
+.shopCar{
+    width: 145px;
+    height: 35px;
+    background-color: #FF8C00;
+    margin-top: 23px;
+    /* font-size: 14px;
+    font-family: "Microsoft YaHei","微软雅黑";
+    line-height: 35px; */
+    font: 14px/35px "Microsoft YaHei","微软雅黑";
+    color: #FFF;
+    margin-right: 59px;
+}
+
+.shopText{
+    height: 100%;
+    width: 87px;
+    border-right: 1px solid #E27A00;
+    background: url(../images/icon/shopcar.jpg) 10px center no-repeat;
+    text-indent: 40px;
+    /*如果用padding-left，需要修改宽度，略麻烦；
+    padding-left: 40px;
+    */
+}
+
+.shopNum{
+    width: 27px;
+    height: 35px;
+    border-left: 1px solid #FF9C01;
+    background: url(../images/icon/shopNum.jpg) 33px center no-repeat;
+    text-align: right;
+    padding-right: 29px;
+}
+/* shopCar END */
+
+/* navBox START */
+.navBox{
+    height: 35px;
+    background-color: #1369C0;
+    color: #FFF;
+}
+
+.shopClass{
+    width: 190px;
+    position: relative;
+}
+
+.shopClass h3{
+    line-height: 35px;
+    text-align: center;
+}
+
+.shopClass i{
+    width: 11px;
+    height: 7px;
+    overflow: hidden;
+    background: url(../images/icon/shopClass.jpg) left center no-repeat;
+    display: inline-block;
+    margin-left: 11px;
+}
+
+.nav,.shopClass{
+    font-family: "Microsoft YaHei","微软雅黑";
+}
+
+.nav{
+    line-height: 35px;
+
+}
+
+.nav li{
+    float: left;
+}
+
+.nav a{
+    height: 35px;
+    display: inline-block;
+    padding: 0 35px;
+    color: #FFF;
+}
+
+.nav .active{
+    background-color: #4593FD;
+}
+/* navBox END */
+
+/* shopClass_item START */
+.shopClass_show{
+    background-color: #4593FD;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 100%;
+}
+
+.shopClass_item{
+    padding: 14px 10px;
+    border-bottom: 1px solid #3487F2;
+    border-top: 1px solid #5AA1FE;
+}
+
+.shopClass_item dt{
+    height: 22px;
+    background: url(../images/icon/shopClass_item.jpg) right center no-repeat;
+}
+
+.shopClass_item .aLink{
+    width: 48px;
+    height: 20px;
+    background: url(../images/icon/aLink_bg.png) left center no-repeat;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: underline;
+}
+
+.shopClass_item .b{
+    /* font-family: "Microsoft YaHei","微软雅黑";
+    font-size: 14px;
+    font-weight: bold; */
+    font: 14px/1 "Microsoft YaHei","微软雅黑";
+}
+
+.shopClass_item a{
+    color: #FFF;
+}
+/* shopClass_item END */
