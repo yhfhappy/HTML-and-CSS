@@ -579,6 +579,19 @@ body{
     line-height: 25px;
 }
 
+/* 筛选页部分 START */
+.vertical li{
+    width: auto;
+    float: none;
+    padding-left: 8px;
+}
+
+.vertical .nav_title, .vertical .nav_cont h3{
+    font-size: 14px;
+    font-family: "Microsoft YaHei","微软雅黑";
+}
+/* 筛选页部分 END */
+
 .navCont_list li{
     float: left;
     width: 50%;
@@ -683,3 +696,60 @@ body{
     overflow: hidden;
 }
 /* 产品分类页 CSS END 
+
+/* 筛选页部分 START */
+.screening{
+    border-bottom: 1px solid #CCC;
+    font-family: Verdana;
+}
+
+.screening dt{
+    line-height: 32px;
+    width: 74px;
+    text-align: right;
+    float: left;
+    margin-right: 42px;
+}
+
+.limit{
+    width: 55px;
+    float: left;
+    line-height: 32px;
+}
+
+.screening .active{
+    color: #FFF;
+    background-color: #1D7AD9;
+    padding: 2px;
+}
+
+.screening a{
+    padding: 2px;
+}
+
+.screening_list{
+    line-height: 32px;
+    width: 626px;
+    float: left;
+}
+
+.screening_list li{
+    width: 20%;
+    float: left;
+}
+
+.screening_more{
+    border: 1px solid #CCC;
+    height: 23px;
+    line-height: 23px;
+    margin-top: 4px;
+    float: left;
+    padding: 0 11px;
+    margin-right: 10px;
+}
+
+.screening_more a{
+    background: url(../images/icon/ar_down.gif) right center no-repeat;
+    padding-right: 14px;
+}
+/* 筛选页部分 END */
