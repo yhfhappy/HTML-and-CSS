@@ -752,4 +752,154 @@ body{
     background: url(../images/icon/ar_down.gif) right center no-repeat;
     padding-right: 14px;
 }
+
+.addCar{
+    border: 1px solid #999;
+    height: 22px;
+    display: inline-block;
+    padding: 0 6px 0 23px;
+    background: url(../images/icon/shopCar.png) 6px center no-repeat;
+}
 /* 筛选页部分 END */
+
+/* 配送地址信息 START */
+.addInfo{
+    height: 31px;
+    border: 1px solid #CCC;
+    background-color: #F5F5F5;
+}
+
+.address{
+    float: left;
+}
+
+.add_text{
+    float: left;
+    line-height: 31px;
+    padding: 0 6px 0 12px;
+}
+
+.select{
+    border: 1px solid #999;
+    height: 22px;
+    line-height: 22px;
+    float: left;
+    background-color: #FFF;
+    padding-left: 10px;
+    position: relative;
+    z-index: 4;
+    padding-right: 20px;
+}
+
+.select h3{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.select span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    background: url(../images/icon/arrow_down.png) center center no-repeat;
+}
+
+.show_select{
+    position: absolute;
+    left: -1px;
+    top: 22px;
+    background-color: #FFF;
+    width: 100%;
+    border: 1px solid #999;
+}
+
+.show_select li{
+    padding-left: 10px;
+}
+
+.addInfo .select{
+    margin-top: 4px;
+
+}
+
+.screen_text{
+    line-height: 31px;
+    padding-right: 80px;
+}
+
+.screen_text span{
+    vertical-align: middle;
+}
+
+.check{
+    position: relative;
+    top: -1px;
+}
+
+.check input,.check label{
+    vertical-align: middle;
+}
+
+.shop_number em{
+    color: #F00;
+    font-weight: bold;
+}
+
+/* 配送地址信息 END */
+
+/* 筛选列表产品部分 START */
+.screening_list_more{
+    padding-left: 0.5%;
+}
+
+.screening_list_more .item{
+    width: 33.3%;
+}
+/* 筛选列表产品部分 END */
+
+/* 分页 START */
+.page{
+    text-align: center;
+}
+
+.page a{
+    height: 24px;
+    display: inline-block;
+    line-height: 24px;
+    border: 1px solid #CCC;
+    padding: 0 12px;
+    margin: 0 2px;
+}
+
+.hulue{
+    display: inline-block;
+    padding: 0 12px;
+    margin: 0 2px;
+}
+
+.morePage{
+    padding-left: 4px;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+}
+
+.pageNum{
+    width: 29px;
+    padding: 0 3px;
+    border: 1px solid #CCC;
+    height: 24px;
+    line-height: 24px\9;
+    text-align: center;
+    margin: 0 2px;
+}
+
+.page_btn{
+    width: 44px;
+    height: 24px;
+    line-height: 24px;
+    background-color: #B8B8B8;
+    border: 1px solid #CCC;
+}
+/* 分页 END */
