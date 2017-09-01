@@ -903,3 +903,277 @@ body{
     border: 1px solid #CCC;
 }
 /* 分页 END */
+
+/* 商品详细页 START */
+.gray{
+    background-color: #F0F0F0;
+}
+
+/* 面包屑导航 START */
+.userPosition{
+    /*font-size: 12px;*/
+    /*解决链接换行产生的间距*/
+    font-size: 0;
+    font-family: Verdana;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.userPosition em,.userPosition span,.userPosition a,.userPosition strong{
+    font-size: 12px;
+}
+
+.userPosition em{
+    font-style: normal;
+}
+
+.userPosition a:hover{
+    text-decoration: underline;
+}
+/* 面包屑导航 END */
+
+/* 详细页图片展示 START */
+.description_info{
+    background-color: #FFF;
+}
+
+.description_info .leftArea{
+    width: 309px;
+}
+
+.description_info .rightArea{
+    width: 688px;
+    border-left: 1px solid #CCC;
+}
+
+.description{
+    border: 1px solid #CCC;
+}
+
+.description_imgs .big{
+    height: 340px;
+    text-align: center;
+}
+
+.des_smimg{
+    width: 265px;
+    margin: 0 auto;
+    padding-left: 1px;
+}
+
+.des_smimg li{
+    float: left;
+    /*解决两个边框重叠*/
+    margin-left: -1px;
+}
+
+.des_smimg img{
+    border: 1px solid #CCC;
+}
+
+.des_smimg .active{
+    border: 1px solid #317EE7;
+    /*给一个相对定位，提升层级，解决边框被压住*/
+    position: relative;
+}
+
+.des_content{
+    padding: 10px;
+}
+
+.des_content .dd{
+    padding-left: 75px;
+}
+
+.des_content .des_content_title{
+    font: bold 16px/22px "Microsoft YaHei","微软雅黑";
+    padding: 13px 25px;
+}
+
+.des_content .dl{
+    margin-bottom: 10px;
+}
+
+.des_content .dt{
+    width: 75px;
+    float: left;
+    color: #666;
+    text-indent: 17px;
+    line-height: 25px;
+}
+
+.des_content .dd{
+    /*以下为兼容IE6的写法*/
+    padding-left: 75px;
+    *padding-left: 0;
+}
+
+.des_money{
+    font-size: 18px;
+    color: #F30;
+    font-family: Verdana;
+}
+
+.des_money em{
+    font-size: 12px;
+}
+
+/* 换购 START */
+.hg{
+    padding-top: 4px;
+    display: inline-block;
+}
+
+.hg_icon{
+    width: 55px;
+    height: 18px;
+    display: inline-block;
+    background: url(../images/icon/hg_icon.png) left top no-repeat;
+    color: #FFF;
+    text-indent: 16px;
+    line-height: 16px;
+    margin-right: 10px;
+    float: left; /*IE6*/
+}
+
+/* 以下为IE6兼容写法 */
+.hg_icon em{
+    float: left;
+    line-height: 18px;
+}
+
+/* 换购 END */
+
+.haveGoods{
+    color: #656565;
+    line-height: 25px;
+    padding-left: 10px;
+}
+
+.des_item{
+    color: #666;
+    padding: 9px 20px;
+    border: 1px solid #CCC;
+    float: left;
+    background-color: #FFF;
+    margin-right: 10px;
+}
+
+.des_item_active{
+    border-color: #317EE7;
+    color: #333;
+}
+
+.des_content .colorSelect{
+    line-height: 35px;
+}
+
+.des_item_sm{
+    padding: 3px 7px;
+    margin-bottom: 8px;
+}
+
+/* 详细页图片展示 END */
+
+/* 购买数量 START */
+.des_number{
+    width: 82px;
+    border: 1px solid #B2B2B2;
+    height: 32px;
+    float: left;
+}
+
+.des_number div{
+    height: 100%;
+    float: left;
+
+}
+
+.reduction,.plus{
+    width: 15px;
+    background-color: #F3F3F3;
+    line-height: 32px;
+    text-align: center;
+    color: #333;
+}
+
+.reduction{
+    border-right: 1px solid #B2B2B2;
+}
+
+.plus{
+    border-left: 1px solid #B2B2B2;
+}
+
+.des_input{
+    width: 50px;
+    overflow: hidden;
+}
+
+.des_input input{
+    width: 100%;
+    /*height: 100%;*/ /*IE6下不兼容*/
+    height: 32px;
+    line-height: 32px/9;
+    text-align: center;
+    padding: 0 2px;
+}
+
+.des_content .xg{
+    float: left;
+    padding-left: 10px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.des_content .xg em{
+    color: #FB7700;
+}
+/* 购买数量 END */
+
+/* 已选择 START */
+.des_select{
+    font-weight: bold;
+    margin: 22px 0 12px;
+    text-indent: 17px;
+}
+
+.des_select span{
+    color: #0479C9;
+}
+/* 已选择 END */
+
+/* 购买 START */
+.shop_buy{
+    text-align: center;
+}
+
+.shopping_btn,.byt_btn{
+    display: inline-block;
+    width: 184px;
+    height: 48px;
+    text-indent: 60px;
+    border-radius: 6px;
+    color: #FFF;
+    font: 20px/48px "Microsoft YaHei","微软雅黑";
+    background: #F88600 url(../images/icon/shopcar1.png) 20px center no-repeat;
+}
+
+.line{
+    width: 1px;
+    height: 90px;
+    background-color: #E5E5E5;
+    margin: 0 40px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.line,.shopping_btn,.byt_btn{
+    vertical-align: middle;
+}
+
+.shop_fp{
+    color: #CCC;
+    text-indent: 17px;
+}
+/* 购买 END */

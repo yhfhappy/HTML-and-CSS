@@ -14,7 +14,7 @@ ul,ol,li {
 }
 
 /*font-style的样式初始化*/
-em {
+em,i {
     font-style: normal;
 }
 
