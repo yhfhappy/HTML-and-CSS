@@ -50,3 +50,7 @@ input,select,textarea {
 
 .show{display: block;}
 .hide{display: none;}
+
+.hr_45{
+    height: 45px;
+}
