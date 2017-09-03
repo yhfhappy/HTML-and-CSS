@@ -695,6 +695,11 @@ body{
     height: 25px;
     overflow: hidden;
 }
+
+.hr_50{
+    height: 50px;
+    overflow: hidden;
+}
 /* 产品分类页 CSS END 
 
 /* 筛选页部分 START */
@@ -1114,7 +1119,7 @@ body{
     width: 100%;
     /*height: 100%;*/ /*IE6下不兼容*/
     height: 32px;
-    line-height: 32px/9;
+    line-height: 32px\9;
     text-align: center;
     padding: 0 2px;
 }
@@ -1549,7 +1554,7 @@ body{
 
 .shoppingCar_info input{
     height: 22px;
-    line-height: 22px/9;
+    line-height: 22px\9;
     border: 1px solid #CCC;
     padding: 0 6px;
 }
@@ -1557,7 +1562,7 @@ body{
 #sec_area{
     width: 154px;
     height: 28px;
-    line-height: 28px/9;
+    line-height: 28px\9;
     border: 1px solid #CCC;
 }
 
@@ -1620,7 +1625,7 @@ body{
 #sec_area_piao{
     width: 50px;
     height: 28px;
-    line-height: 28px/9;
+    line-height: 28px\9;
     border: 1px solid #CCC;
 }
 
@@ -1665,3 +1670,302 @@ body{
 .backCar:hover{
     text-decoration: underline;
 }
+
+.cart_head{
+    padding-top: 5px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.cart_item{
+    border-bottom: 1px solid #CCC;
+    float: left;
+}
+
+.t_name{
+    width: 440px;
+    padding-left: 30px;
+}
+
+.t_price{
+    width: 134px;
+}
+
+.t_return{
+    width: 136px;
+}
+
+.t_num{
+    width: 135px;
+}
+
+.t_subtotal{
+    width: 123px;
+}
+
+/* 商品信息 START */
+.cart_cont{
+    border-bottom: 1px solid #CCC;
+}
+
+.cart_cont .cart_item{
+    border-bottom: none;
+}
+
+.cart_cont .t_price,
+.cart_cont .t_return,
+.cart_cont .t_num,
+.cart_cont .t_subtotal{
+    line-height: 37px;
+}
+
+.cart_shopInfo img{
+    width: 90px;
+    height: 100px;
+    display: block;
+    float: left;
+    padding: 4px 0;
+}
+
+.cart_shopInfo_cont{
+    padding-left: 110px;
+    font-size: 12px;
+}
+
+.cart_link{
+    line-height: 37px;
+    margin-bottom: 30px;
+}
+
+.cart_link a:hover{
+    text-decoration: underline;
+}
+
+.cart_info{
+    color: #000;
+}
+
+.t_red{
+    color: red;
+    font-weight: bold;
+}
+
+.cart_item_num{
+    font-size: 12px;
+}
+
+.cart_message{
+    color: #3377FF;
+    line-height: 40px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.pb_10{
+    padding-bottom: 10px;
+}
+
+.cart_no_bor{
+    border-bottom: none;
+}
+
+.cart_prompt{
+    line-height: 40px;
+    padding-left: 30px;
+    color: red;
+}
+
+.cart_prompt_icon{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background: url(../images/icon/tanhao.gif) left top no-repeat;
+    margin-right: 10px;
+    position: relative;
+    top: 1px;
+}
+/* 商品信息 END */
+
+.cart_count{
+    float: right;
+}
+
+.cart_rmb i{
+    font-size: 14px;
+    color: #999;
+}
+
+.cart_rmb{
+    margin-bottom: 18px;
+}
+
+.cart_rmb span{
+    font-size: 24px;
+    color: red;
+    font-family: "Verdana";
+    font-weight: bold;
+}
+
+.cart_btnBox{
+    text-align: right;
+}
+
+.cart_btn{
+    width: 165px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #E50007;
+    color: #FFF;
+    font-weight: bold;
+}
+
+/* 登录注册 START */
+.login_logo .comWidth{
+    width: 630px;
+}
+
+.login_logo .logo{
+    margin-left: 60px;
+}
+
+.welcome_tit{
+    font: 22px/85px "Microsoft YaHei","微软雅黑";
+    color: #FFF;
+    float: left;
+    padding-left: 24px;
+}
+
+.l_tit{
+    color: #666;
+    line-height: 20px;
+}
+
+.loginBox{
+    width: 458px;
+    border: 1px solid #CCC;
+    margin: 20px auto 256px;
+    position: relative;
+}
+
+.login_cont{
+    padding: 15px 76px;
+}
+
+.login_input{
+    width: 100%;
+    height: 32px;
+    line-height: 32px\9;
+    border: 1px solid #999;
+    text-indent: 5px;
+}
+
+.user_icon{
+    background: url(../images/icon/login_icon.gif) right center no-repeat;
+}
+
+.pass_icon{
+    background: url(../images/icon/pass_icon.gif) right center no-repeat;
+}
+
+.mb_10{
+    margin-bottom: 10px;
+}
+
+.loginInput li{
+    float: left;
+    padding-top: 27px;
+    padding-bottom: 28px;
+}
+
+.loginInput li a{
+    color: blue;
+    margin-left: 3px;
+}
+
+.checked,.loginInput li a{
+    position: relative;
+    top: 3px;
+    margin-right: 3px;
+}
+
+.login_btn{
+    font-weight: bold;
+    width: 309px;
+    height: 36px;
+    background-color: #D5D5D5;
+    border: 1px solid #CCC;
+    border-radius: 6px;
+}
+
+.login_partners{
+    padding-top: 34px;
+}
+
+.login_list li{
+    float: left;
+    line-height: 20px;
+}
+
+.login_list span{
+    color: #999;
+    margin: 0 2px;
+}
+
+.reg_link{
+    width: 115px;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    color: #FFF;
+    display: inline-block;
+    background-color: #7CBE56;
+    position: absolute;
+    right: 41px;
+    bottom: -31px;
+}
+
+.reg_logo .comWidth{
+    width: 630px;
+}
+
+.regBox{
+    width: 628px;
+    margin: 10px auto;
+    border: 1px solid #CCC;
+}
+
+.reg_item{
+    font: 14px/34px "宋体";
+    width: 110px;
+    text-align: right;
+    float: left;
+}
+
+.reg_item i{
+    color: red;
+    margin-right: 5px;
+}
+
+.input_item{
+    width: 270px;
+    float: left;
+}
+
+.regBox li{
+    height: 70px;
+    vertical-align: top;
+}
+
+.regBox .autoLogin{
+    height: 46px;
+    padding: 0;
+}
+
+.regBox .autoLogin a{
+    color: blue;
+}
+
+.regBox .autoLogin a:hover{
+    text-decoration: underline;
+}
+/* 登录注册 END */
