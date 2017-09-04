@@ -1,0 +1,720 @@
+/* 
+* @Author: YHF
+* @Date:   2017-06-13 09:23:41
+* @Last Modified by:   YHF
+* @Last Modified time: 2017-06-15 17:48:05
+*/
+
+/*CSS RESET*/
+body,ul,p,h1,h2,h3,h4,dl,dd,form,input,textarea,select { padding:0; margin:0; font-family:arial; }
+li { list-style:none; }
+img { border:none; }
+a { text-decoration:none; }
+a:hover { text-decoration:underline; }
+
+/* Body部分 */
+body {
+    background: #fff url("../images/body_bg.png") repeat-x;
+}
+
+/* Top部分 */
+#top {
+    width: 960px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.top-menu {
+    float: left;
+}
+
+.top-menu li {
+    float: left;
+    background: url("../images/top-ico.png") no-repeat right 13px;
+    font-size: 13px;
+    line-height: 30px;
+    padding-right: 18px;
+    margin-right: 15px;
+}
+
+.top-menu a {
+    color: #c0c0c0;
+}
+
+.top-menu a:hover {
+    color: #fff;
+}
+
+.top-menu .no-dot {
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-bar {
+    float: right;
+}
+
+.top-bar li {
+    height: 30px;
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 30px;  /* IE6下行高是不能针对图片进行居中设置的。*/
+}
+
+/*
+解决IE6兼容性问题的原则：坚决不要用 CSS HACK；
+*/
+
+/* 解决IE6下图片不能居中的BUG */
+.sbie6-img img {
+  float: left;  /*浮动：先将图片变成块元素，此处也可以用display:block;*/
+  position: relative; /*此处也可以用margin-top:10px;*/
+  top: 10px;
+}
+
+.top-bar a {
+    color: #c0c0c0;
+}
+
+.top-bar .phone {
+    background: url("../images/top-ico1.png") no-repeat 2px -30px;
+    padding:0 38px;
+}
+
+.top-bar .help {
+    background: url("../images/top-ico.png") no-repeat 0 -46px;
+    padding:0 38px;
+}
+
+.top-bar .help a {
+    color: #fff;
+}
+
+.top-bar .space {
+    margin-right: 12px; /*如果用padding会发生凌空点的现象*/
+}
+
+/* Header部分 */
+#header {
+    width: 960px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    background: url("../images/header_bg.png") no-repeat;
+}
+
+#shopping {
+    width: 260px;
+    height: 100px;
+    background: url("../images/shopping_bg.png") no-repeat;
+    position: relative;
+}
+
+#shopping p {
+    color: #f7f7f7;
+    font-size: 20px;
+    padding: 30px 0 0 84px;
+}
+
+#shopping a {
+    display: block;
+    width: 114px;
+    height: 23px;
+    background: url("../images/shopping_bg.png") no-repeat 0 -100px;
+    position: absolute;
+    top: 63px;
+    left: 104px;
+    font-size: 15px;
+    color: #ffc200;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    line-height: 23px;
+}
+
+#shopping a:hover{
+    color: #ffe388;
+}
+
+#header h1 {
+    width: 238px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -119px;
+}
+
+/*非常有利于头部和底部搜索框的重用*/
+#header .search {
+    position: absolute;
+    top: 34px;
+    right: 0;
+}
+
+/*搜索部分*/
+.search {
+    width: 292px;
+    height: 31px;
+    background: url("../images/search.png") no-repeat;
+    position: absolute;
+}
+
+.search .text {
+    width: 230px;
+    height: 30px;
+    line-height: 30px;  /*这一行的作用：解决IE6下输入框内文字不居中的BUG*/
+    position: absolute; /* 用定位可以减少一些问题的发生 */
+    top: 0;
+    left: 20px;
+    background: none;   /* 去掉文本框自带的背景和外边框 */
+    border: none;
+    font-size: 13px;
+    color: #666;
+    outline: none;      /* 去掉谷歌下自带的框框 */
+}
+.search .btn {
+    width: 42px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none;   /* 去掉按钮自带的背景和外边框 */
+    border: none;
+}
+
+/* 导航 */
+#nav {
+    width: 960px;
+    height: 36px;
+    padding-top: 8px;
+    margin: 0 auto;
+}
+
+#nav li {
+    float: left;
+    height: 28px;
+    margin-right: 2px;
+}
+
+#nav a {
+    float: left;
+    height: 28px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: Arial;
+    line-height: 28px;
+    cursor: pointer;  /*此行的作用：解决IE6下链接鼠标移入不显示手型的BUG；*/
+}
+
+#nav a:hover,#nav .active a {
+    background: url("../images/nav_active_bg.png") repeat-x 0 -56px;
+}
+
+#nav strong { /* 注意自带样式 */
+    float: left;
+    height: 28px;
+    font-weight: normal;
+}
+
+#nav a:hover strong,#nav .active strong {
+    background: url("../images/nav_active_bg.png") no-repeat;
+}
+
+#nav span {
+    float: left;
+    height: 28px;
+    padding: 0 16px;
+}
+
+#nav a:hover span,#nav .active span {
+    background: url("../images/nav_active_bg.png") no-repeat right -28px; 
+}
+
+#content {
+  width: 1000px;
+  margin: 24px auto 0;
+  background: url("../images/content_bg.png") repeat-y -1000px 0;
+}
+
+#content-top {
+  width: 1000px;
+  background: url("../images/content_bg.png") no-repeat;
+}
+
+#content-bottom {
+  width: 1000px;
+  background: url("../images/content_bg.png") no-repeat -2000px bottom;
+  padding-top: 10px;
+}
+
+#ad {
+  width: 940px;
+  height: 300px;
+  position: relative;
+  margin: 0 auto;
+}
+
+#ad ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#ad li {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#ad h2 {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  z-index: 3;
+  width: 268px;
+  text-align: center;
+  font-size: 25px;
+  color: #ffc600;
+}
+
+#ad p {
+  position: absolute;
+  bottom: 7px;
+  left: 268px;
+  z-index: 3;
+  color: #fcc;
+  font-size: 13px;
+  line-height: 16px;
+  width: 630px;
+}
+
+#ad .bg {
+  width: 940px;
+  height: 52px;
+  background: #000;
+  filter:alpha(opacity:80);
+  opacity:0.8;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#main {
+  width: 942px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+#side {
+  width: 210px;
+  float: left;
+}
+
+#wrap {
+  width: 706px;
+  float: right;
+}
+
+/* 清除浮动 */
+.clear {zoom:1;}
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.moduel-menu {
+  margin-bottom: 12px;
+}
+
+.moduel-menu h2 {
+  height: 29px;
+  background: url("../images/module_menu_bg.gif") repeat-x 0 -58px;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.moduel-menu h2 strong {  /* strong span是内联，不认高，所以用display:block; */
+  display: block;
+  height: 29px;
+  background: url("../images/module_menu_bg.gif") no-repeat;
+}
+
+.moduel-menu h2 span {
+  display: block;
+  height: 29px;
+  background: url("../images/module_menu_bg.gif") no-repeat right -29px;
+}
+
+.list {
+  background: url("../images/list_bg.gif") repeat-y;
+}
+
+.list ul {
+  background: url("../images/list_bg.gif") no-repeat -210px bottom;
+  padding-top: 18px 8px 15px;
+}
+
+.list li {}
+
+.list a {
+  display: block;
+  height: 27px;
+  line-height: 27px;
+  border-bottom: 1px solid #fff;
+  color: #434343;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  padding-left: 32px;
+}
+
+.list a:hover {
+  color: #b20e00;
+  border-bottom: 1px solid ##b20e00;
+  background: #fae191;
+  text-decoration: none;  /*因为在不移入那设置了没有下划线，所以如果要兼容 IE6 的话，此处移入也要设置下划线为无。*/
+}
+
+.module-join {
+  width: 210px;
+  background: url("../images/list_bg.gif") repeat-y -630px 0;
+}
+
+.module-join-t {
+  background: url("../images/list_bg.gif") no-repeat -420px 0;
+}
+
+.module-join-b {
+  background: url("../images/list_bg.gif") no-repeat -840px bottom;
+}
+
+.Join-form {
+  width: 180px;
+  margin: 0 auto 12px;
+}
+
+.Join-form p {
+  font-size: 15px;
+  color: #666;
+  line-height: 18px;
+  padding: 12px 0;
+}
+
+.Join-form .text {
+  width: 175px;
+  height: 25px;
+  line-height: 25px;
+  background: #fff;
+  border: 1px solid #fff;
+  border-top: 1px solid #9c9c9c;
+  border-left: 1px solid #c0c0c0;
+  margin-bottom: 6px; /*IE下奇数会有BUG*/
+}
+
+.Join-form .btn {
+  width: 88px;
+  height: 25px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+  background: url("../images/shopping_bg.png") no-repeat 0 -145px;
+  margin: 0 auto;
+  display: block;
+}
+
+.join-list {
+  width:192px;
+  margin:0 auto;
+  background:url(../images/shopping_bg.gif) no-repeat 10px 8px;
+}
+
+.join-list li {
+  border-top:1px solid #fff;
+  padding-left:62px;
+  color:#434343;
+  font-size:13px;
+}
+
+.space1 { height:45px; line-height:45px; }
+.space2 { height:38px; padding-top:5px; line-height:18px; }
+.space3 { height:45px; padding-top:5px; line-height:18px; }
+
+/* payment */
+#payment {
+  margin: 33px 0 0 18px;
+}
+
+#payment img {}
+
+/* 右侧上部列表和页码 */
+.sort {
+  height: 20px;
+}
+
+.sort h2 {
+  width: 108px;
+  height: 17px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  color: #747474;
+  font-weight: normal;
+  text-indent: 5px;
+}
+
+.sort a { /* a连接不认宽高，所以要用定位转换一下 */
+  position: absolute;
+  top: 0;
+  left: 90px;  /* 平时一般都从左边算起，右边会遇到一个一像素的BUG */
+  width: 19px;
+  height: 19px;
+  background: url("../images/shopping_bg.png") no-repeat 0 -376px;
+}
+
+.sort a:hover {
+  background: url("../images/shopping_bg.png") no-repeat -19px -376px;
+  z-index: 2;
+}
+
+.sort dl {
+  float: left;
+}
+
+.sort dt {
+  float: left;
+  font-size: 12px;
+  color: #747474;
+  font-weight: bold;
+  padding-right: 2px;
+}
+
+.sort dd {
+  float: left;
+  width: 109px;
+  height: 19px;
+  position: relative;
+  margin-right: 12px;
+}
+
+.sort ul {
+  width: 108px;
+  border: 1px solid #ccc;
+  background: #fff; /* 有颜色是为了弹出来的时候盖住底层的内容 */
+  position: absolute;
+  top: 18px;
+  left: 0px;
+  z-index: 1;
+  display: none;
+}
+
+.sort li {
+  font-size: 12px;
+  line-height: 20px;
+  text-indent: 5px;
+  cursor: pointer;
+}
+
+.sort .active {
+  background: #099;
+  color: #fff;
+}
+
+.sort p {
+  font-size: 12px;
+  float: right;
+  color: #747474;
+}
+
+.sort p strong {
+  color: #999;
+}
+
+.sort p span {
+  padding: 0 5px;
+}
+
+.color-style {
+  color: #b20e00;
+}
+
+/* pic-list */
+.pic-list {
+  width: 706px;
+  overflow: hidden;
+}
+
+.pic-list h2 {
+  height: 56px;
+  line-height: 62px;
+  overflow: hidden;
+  font-size: 18px;
+  color: #666;
+}
+
+.pic-list ul {
+  width: 736px;
+}
+
+.pic-list li {
+  width: 182px;
+  height: 200px;
+  float: left;
+}
+
+.pic-list a {
+  width: 154px;
+  height: 114px;
+  border: 1px solid #c6c6c6;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.pic-list a:hover {
+  border: 1px solid #663;
+}
+
+.pic-list h3 {
+  color: #666;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.pic-list p {
+  color: #333;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.pic-list span {
+  color: #b20e00;
+}
+
+/* 翻页 */
+.page {
+  text-align: center;
+  border-bottom: 1px solid #cdcdc8;
+  padding-bottom: 5px;
+}
+
+.page a {
+  display: inline-block;
+  height: 20px;
+  padding: 0 8px;
+  color: #b20e00;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.page a:hover,.page .active {
+  color: #fff;
+  background: #b20e00;
+}
+
+.page span {
+  font-family: '宋体';
+}
+
+/* 展示区（scroll） */
+#scroll-list {
+
+}
+
+#scroll-list h2 {
+  height: 56px;
+  line-height: 62px;
+  overflow: hidden;
+  font-size: 18px;
+  color: #666;
+}
+
+.scroll-wrap {
+  height: 196px;
+  background: url("../images/scroll_bg.gif") repeat-x 0 -478px;
+}
+
+.scroll-wrap-l {
+  height: 196px;
+  background: url("../images/scroll_bg.gif") no-repeat 0 -86px;
+}
+
+.scroll-wrap-r {
+  height: 196px;
+  background: url("../images/scroll_bg.gif") no-repeat right -282px;
+  position: relative;
+}
+
+.prev {
+  width: 35px;
+  height: 43px;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background: url("../images/scroll_bg.gif") no-repeat;
+}
+
+.next {
+  width: 35px;
+  height: 43px;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background: url("../images/scroll_bg.gif") no-repeat 0 -43px;
+}
+
+.list-wrap {
+  width: 615px;
+  padding-top: 32px;
+  margin: 0 auto;
+}
+
+.list-wrap ul {
+  height: 150px;
+}
+
+.list-wrap li {
+  width: 205px;
+  float: left;
+}
+
+.list-wrap a,.list-wrap p {
+  width: 145px;
+  margin: 0 auto;
+}
+
+.list-wrap a {
+  display: block;
+  height: 100px;
+}
+
+.list-wrap p {
+  font-size: 12px;
+  color: #600;
+  text-indent: center;
+  line-height: 14px;
+  padding-top: 10px;
+}
+
+/* footer */
+#footer { height:302px; background:url(../images/footer_bg.png) repeat-x; }
+#footer_info { width:940px; height:60px; margin:0 auto; position:relative; }
+#footer_info p { height:60px; line-height:60px; color:#cbcbcb; font-size:14px; font-weight:bold; float:left; }
+#footer_info .ico1 { background:url(../images/footer_info.png) no-repeat 0 4px; text-indent:60px; margin-right:25px; }
+#footer_info .ico2 { background:url(../images/footer_info.png) no-repeat 0 -52px; text-indent:50px; }
+#footer_info .search { position:absolute; top:15px; right:-10px; }
+
+#footer_link { width:920px; margin:0 auto; overflow:hidden; padding-top:20px; }
+#footer_link dl { float:left; width:184px; }
+#footer_link dt { font-size:15px; color:#fff; font-weight:bold; line-height:50px; }
+#footer_link dd { line-height:20px; }
+#footer_link a { font-size:13px; color:#cfcfcf; }
+#footer_link .space { padding-top:20px; }
+#footer_link .pos { position:relative; left:-20px; }
