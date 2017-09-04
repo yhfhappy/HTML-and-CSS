@@ -1,0 +1,65 @@
+/*margin的样式初始化*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd {
+    margin: 0;
+}
+
+/*padding的样式初始化*/
+ul,ol {
+    padding: 0;
+}
+
+/*列表的样式初始化*/
+ul,ol,li {
+    list-style-type: none;
+}
+
+/*font-style的样式初始化*/
+em,i {
+    font-style: normal;
+}
+
+/*下划线的样式初始化*/
+a {
+    text-decoration: none;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+/* 解决IE下蓝色的图片边框 */
+img{
+    padding: 0;
+    border:0;
+}
+
+/* 清浮动：如果需要高度自适应，就直接在本体上加 */
+.clearfix:after{
+    content: "";
+    height:0;  /*基本没用*/
+    visibility:hidden; /*隐藏内容*/
+    display: block;
+    clear: both;
+};
+
+.clearfix{*zoom:1;}
+
+/* 其它 */
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.icon{
+    font-family: "icon";
+    text-align: left;
+    vertical-align: middle;
+}
+
+.comWidth{
+    width: 1200px;
+}

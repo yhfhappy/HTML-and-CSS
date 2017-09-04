@@ -1,0 +1,433 @@
+@charset "utf-8";
+
+body {
+  font-size: 12px;
+  background: #f5f5f5;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+
+/*** 头部 START ***/
+.header {
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.headerInner {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.nav {
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.navItem {
+  line-height: 56px;
+}
+
+.navItem li {
+  float: left;
+  margin-right: 18px;
+}
+
+.navItem a {
+  height: 56px;
+  display: inline-block;
+  color: #9b9b9b;
+}
+
+.navItem .active a {
+  color: #000;
+}
+
+.navItem i {
+  padding-right: 6px;
+}
+
+.user_actions {
+  padding-right: 2px;
+  line-height: 56px;
+}
+
+.user_actions a {
+  color: #9b9b9b;
+  font-weight: bold;
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #FFF;
+  margin-right: 8px;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+
+.user_actions a:hover {
+  color: #fff;
+  background: #000;
+}
+
+.user_actions .active {
+  color: #fff;
+  background: #000;
+}
+
+.logo {
+  width: 60%;
+  height: 56px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo a {
+  height: 56px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 39px;
+  height: 18px;
+  margin-top: 16px;
+}
+/*** 头部 END ***/
+
+/*** 主体内容部分 START ***/
+.main {
+  margin: 0 auto;
+  padding-top: 86px;
+  overflow: hidden;
+}
+
+.mainItem {
+  margin: 0 3px;
+}
+
+.stream {
+  width: 380px;
+  height: 380px;
+  text-align: center;
+  position: relative;
+  margin: 0 9px;
+  margin-bottom: 20px;
+  background-color: #FFF;
+}
+
+.stream img {
+  width: 230px;
+  height: 240px;
+  margin: 38px 75px 12px;
+}
+
+.streamTit {
+  line-height: 44px;
+}
+.streamTit a {
+  font-size: 12px;
+  font-weight: normal;
+  color: #adadad;
+}
+
+.streamTit a:hover {
+  text-decoration: underline;
+}
+
+.stream .price {
+  width: 70px;
+  height: 36px;
+  line-height: 36px;
+  color: #9b9b9b;
+  background: #f9fafc;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.thing-actions {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  border-top: 1px solid #f5f5f5;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.thing-actions a {
+  color: #adadad;
+  font-size: 18px;
+  width: 50%;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  display: inline-block;
+  float: left;
+}
+
+/*** 主体内容部分 END ***/
+
+/*** 翻页 START ***/
+.more {
+  font-size: 14px;
+  color: #9b9ba4;
+  display: block;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  background-color: #e3e3e3;
+  margin-top: 36px;
+}
+
+/*** 翻页 END ***/
+
+/*** 底部 START ***/
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  color: #9b9b9b;
+  background-color: #fff;
+}
+
+.footer ul {
+  text-align: center;
+  line-height: 40px;
+}
+
+.footer ul li {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid #9b9b9b;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px 30px 10px;
+}
+
+.footer .copyright {
+  font-size: 13px;
+}
+/*** 底部 END ***/
+
+/* 登录注册 START */
+.userWrap {
+  color: #9b9b9b;
+  text-align: center;
+  padding: 50px 15px 0;
+  margin: 0 auto;
+  height: 700px;
+}
+
+.navLine {
+  margin-top: 100px;
+}
+
+.userWrap ul {
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.userWrap li {
+  display: inline-block;
+  margin: 20px;
+}
+
+.userWrap a {
+  color: #9b9b9b;
+}
+
+.userWrap ul .active a {
+  color: #404040;
+  border-bottom: 2px solid #404040;
+}
+
+.userWrap input {
+  width: 390px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 50px\9;
+  margin: 0 auto;
+  display: block;
+  border: 1px solid #f5f5f5;
+  padding: 0 10px;
+}
+
+.userWrap input:nth-of-type(2) {
+  border-top: none;
+  border-bottom: none;
+}
+
+.userWrap input:last-child {
+  color: #fff;
+  width: 412px;
+  height: 50px;
+  padding: 0;
+  margin-top: 20px;
+  background: #404040;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.omniauths {
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.omniauths a {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  color: #fff;
+  background: #000;
+  text-align: center;
+  display: inline-block;
+  margin: 20px 0 0 36px;
+}
+
+/* 登录注册 END */
+
+/* 详情页 START */
+.img-left {
+  width: 30%;
+  float: left;
+  text-align: center;
+}
+
+.img-left img {
+  width: 99.8%;
+  margin: 36px 86px;
+}
+
+.img-left .icon {
+  width: 100%;
+  margin: 36px 56px;
+  text-align: center;
+  padding-left: 26px;
+}
+
+.img-left a {
+  width: 40%;
+  color: #9b9b9b;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.img-left i {
+  padding-right: 6px;
+}
+
+.things {
+  color: #9b9b9b;
+  max-width: 46%;
+  float: right;
+  margin: 50px 50px;
+}
+
+.tag {
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.tag a {
+  width: 106px;
+  height: 28px;
+  color: #9b9b9b;
+  display: inline-block;
+  margin: 20px 10px 20px 0;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.tag a:hover {
+  color: #fff;
+  background: #000;
+}
+
+.things-title {
+  color: #404040;
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 38px;
+}
+
+.buy {
+  max-width: 230px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  background: #000;
+  border-radius: 4px;
+  margin: 20px 0 40px 0;
+}
+
+.buy a {
+  display: inline-block;
+  color: #fff;
+}
+
+.other .fa-heart {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  color: #fff;
+  background: #000;
+  text-align: center;
+}
+
+.other li {
+  float: left;
+  margin-right: 10px;
+}
+
+.other li a img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.things-related {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.things-related h3 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #9b9b9b;
+  border-top: 1px solid #f5f5f5;
+  padding: 30px;
+}
+
+.things-related img {
+  max-width: 132px;
+  height: 132px;
+  float: left;
+  margin-left: 58px;
+}
+
+.buyItem {
+  margin: 0 3px;
+  background-color: #FFF;
+}
+/* 详情页 END */

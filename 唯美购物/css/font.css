@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'icon';
+    src: 
+        url('./icon/fonts/icon.eot'),
+        url('./icon/fonts/icon.svg'),
+        url('./icon/fonts/icon.otf'),
+        url('./icon/fonts/icon.ttf'),
+        url('./icon/fonts/icon.woff'),
+        url('./icon/fonts/icon.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
