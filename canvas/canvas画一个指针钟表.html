@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style type="text/css">
+	body { background: black; }
+	#c1 { background: white; }
+</style>
+
+<script type="text/javascript">
+	
+	window.onload = function (){
+		var oC = document.getElementById('c1');
+		var oGC = oC.getContext('2d');
+		
+		function toDraw(){
+			//初始化变量，并赋值；
+			var x = 200;
+			var y = 200;
+			var r = 150;
+			
+			//绘图之前先清除整个画布；
+			oGC.clearRect(0,0,oC.width,oC.height);
+			
+			//获取日期对象；
+			var oDate = new Date();
+			var oHours = oDate.getHours();
+			var oMin = oDate.getMinutes();
+			var oSen = oDate.getSeconds();
+			
+			//计算各指针的旋转弧度；
+			var oHoursValue = (-90 + oHours*30 + oMin/2) * Math.PI/180;
+			var oMinValue = (-90 + oMin*6) * Math.PI/180;
+			var oSenValue = (-90 + oSen*6) * Math.PI/180;
+			
+			//1.画一个圆，且圆里面有60个刻度，表示每一秒；
+			oGC.beginPath();
+			
+			for (var i=0;i<60;i++) {
+				oGC.moveTo(x,y);
+				oGC.arc(x,y,r,6*i*Math.PI/180,6*(i+1)*Math.PI/180,false);
+			}
+			
+			oGC.closePath();
+			oGC.stroke();
+			
+			//2.用一个稍小一点的白色的圆遮住刻度多余的部分；
+			oGC.fillStyle = 'white';
+			oGC.beginPath();
+			oGC.arc(x,y,r*19/20,0,360*Math.PI/180,false);			
+			oGC.closePath();	
+			oGC.fill();
+			
+			//3.画一个圆，且园里面有12个刻度，表示每小时；
+			oGC.lineWidth = 3;
+			oGC.beginPath();
+			
+			for (var i=0;i<12;i++) {
+				oGC.moveTo(x,y);
+				oGC.arc(x,y,r,30*i*Math.PI/180,30*(i+1)*Math.PI/180,false);
+			}
+			
+			oGC.closePath();
+			oGC.stroke();
+			
+			//4.用一个更小一点的白色的圆遮住刻度多余的部分；
+			oGC.fillStyle = 'white';
+			oGC.beginPath();
+			oGC.arc(x,y,r*18/20,0,360*Math.PI/180,false);			
+			oGC.closePath();
+			oGC.fill();
+			
+			//5.时针
+			oGC.lineWidth = 5;
+			oGC.beginPath();
+			oGC.moveTo(x,y);
+			oGC.arc(x,y,r*10/20,oHoursValue,oHoursValue,false);			
+			oGC.closePath();
+			oGC.stroke();
+			
+			//6.分针
+			oGC.lineWidth = 3;
+			oGC.beginPath();
+			oGC.moveTo(x,y);
+			oGC.arc(x,y,r*14/20,oMinValue,oMinValue,false);			
+			oGC.closePath();
+			oGC.stroke();
+			
+			//6.秒针
+			oGC.lineWidth = 1;
+			oGC.beginPath();	//开始绘制路径；
+			oGC.moveTo(x,y);
+			oGC.arc(x,y,r*19/20,oSenValue,oSenValue,false);			
+			oGC.closePath();	//结束绘制路径；
+			oGC.stroke();
+		};
+		
+		//7.开一个定时器，每一秒调用一下绘画这个函数；
+		setInterval(toDraw,1000);
+		
+		toDraw();
+	};
+	
+</script>
+</head>
+
+<body>	
+	<canvas id="c1" width="500px" height="500px"></canvas>	
+</body>
+</html>
