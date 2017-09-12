@@ -23,7 +23,7 @@ a {
     text-decoration: none;
 }
 
-input {
+input,select {
     border: none;
     outline: none;
 }
@@ -62,4 +62,13 @@ img{
 
 .comWidth{
     width: 1200px;
+    margin: 0 auto;
+}
+
+.leftArea{
+    float: left;
+}
+
+.rightArea{
+    float: right;
 }
