@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <title>悦心物语-案例</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+<!-- 头部 START -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- LOGO部分 START -->
+        <div id="logo" class="navbar-header">
+            <!-- LOGO 图片 -->
+            <a href="index.html" class="navbar-brand">
+                <img class="" src="images/logo.png" title="悦心物语" alt="悦心物语" />
+            </a>
+
+            <!-- 页面缩小时显示的导航 START -->
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#navList">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- 页面缩小时显示的导航 END -->
+        </div>
+        <!-- LOGO部分 END -->
+
+        <!-- 搜索部分 START -->
+        <form class="navbar-form hidden-sm hidden-xs navbar-right">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">搜索</button>
+
+            <!-- 模态框 -->
+            <button id="myMember" class="btn btn-default"><a data-toggle="modal" data-target="#member" href="#">会员中心</a></button>
+        </form>
+        <!-- 搜索部分 END -->
+
+        <!-- 导航部分 START -->
+        <div id="navList" class="collapse navbar-collapse">
+
+            <ul class="nav navbar-nav navbar-left">
+                <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;首页</a></li>
+                <li><a href="information.html"><span class="glyphicon glyphicon-list"></span>&nbsp;资讯</a></li>
+                <li><a href="case.html"><span class="glyphicon glyphicon-heart"></span>&nbsp;案例</a></li>
+                <li><a href="about.html"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;关于</a></li>
+
+                <!-- 会员中心模态框 START -->
+                <!-- 说明：data-toggle表示所要的效果；data-target表示定位的位置 -->
+                <!-- 说明：data-target也可以用a链接的href代替，不过不推荐 -->
+                <!-- 使用href加载远程模块的内容,也可以用remote事件（包含：modal-header modal-body modal-footer） -->
+                <!-- <li><button class="btn btn-default navbar-btn" data-toggle="modal" data-target="#member">会员中心</button></li> -->
+                <!-- 会员中心模态框 END -->
+            </ul>
+        </div>
+        <!-- 导航部分 END -->
+    </div>
+</nav>
+<!-- 头部 END -->
+
+<!-- 资讯页主体内容部分 START -->
+<div class="jumbotron">
+    <!-- Banner -->
+    <div class="container">
+        <hgroup>
+            <h1>案例</h1>
+            <h4>和各大明星企业有着紧密合作...</h4>
+        </hgroup>
+    </div>
+</div>
+
+<!-- case -->
+<div id="case">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./images/case1.jpg" alt="" />
+                    <!-- caption：图片说明 -->
+                    <div class="caption text-center">
+                        <h4>人生的智慧</h4>
+                        <p>人们最终所真正能够理解和欣赏的事物，只不过是一些在本质上和他自身相同的事物罢了。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./images/case2.jpg" alt="" />
+                    <!-- caption：图片说明 -->
+                    <div class="caption text-center">
+                        <h4>人生的智慧</h4>
+                        <p>人们最终所真正能够理解和欣赏的事物，只不过是一些在本质上和他自身相同的事物罢了。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./images/case3.jpg" alt="" />
+                    <!-- caption：图片说明 -->
+                    <div class="caption text-center">
+                        <h4>人生的智慧</h4>
+                        <p>人们最终所真正能够理解和欣赏的事物，只不过是一些在本质上和他自身相同的事物罢了。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./images/case4.jpg" alt="" />
+                    <!-- caption：图片说明 -->
+                    <div class="caption text-center">
+                        <h4>人生的智慧</h4>
+                        <p>人们最终所真正能够理解和欣赏的事物，只不过是一些在本质上和他自身相同的事物罢了。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./images/case1.jpg" alt="" />
+                    <!-- caption：图片说明 -->
+                    <div class="caption text-center">
+                        <h4>人生的智慧</h4>
+                        <p>人们最终所真正能够理解和欣赏的事物，只不过是一些在本质上和他自身相同的事物罢了。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./images/case2.jpg" alt="" />
+                    <!-- caption：图片说明 -->
+                    <div class="caption text-center">
+                        <h4>人生的智慧</h4>
+                        <p>人们最终所真正能够理解和欣赏的事物，只不过是一些在本质上和他自身相同的事物罢了。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./images/case3.jpg" alt="" />
+                    <!-- caption：图片说明 -->
+                    <div class="caption text-center">
+                        <h4>人生的智慧</h4>
+                        <p>人们最终所真正能够理解和欣赏的事物，只不过是一些在本质上和他自身相同的事物罢了。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./images/case4.jpg" alt="" />
+                    <!-- caption：图片说明 -->
+                    <div class="caption text-center">
+                        <h4>人生的智慧</h4>
+                        <p>人们最终所真正能够理解和欣赏的事物，只不过是一些在本质上和他自身相同的事物罢了。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./images/case1.jpg" alt="" />
+                    <!-- caption：图片说明 -->
+                    <div class="caption text-center">
+                        <h4>人生的智慧</h4>
+                        <p>人们最终所真正能够理解和欣赏的事物，只不过是一些在本质上和他自身相同的事物罢了。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./images/case2.jpg" alt="" />
+                    <!-- caption：图片说明 -->
+                    <div class="caption text-center">
+                        <h4>人生的智慧</h4>
+                        <p>人们最终所真正能够理解和欣赏的事物，只不过是一些在本质上和他自身相同的事物罢了。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./images/case3.jpg" alt="" />
+                    <!-- caption：图片说明 -->
+                    <div class="caption text-center">
+                        <h4>人生的智慧</h4>
+                        <p>人们最终所真正能够理解和欣赏的事物，只不过是一些在本质上和他自身相同的事物罢了。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./images/case4.jpg" alt="" />
+                    <!-- caption：图片说明 -->
+                    <div class="caption text-center">
+                        <h4>人生的智慧</h4>
+                        <p>人们最终所真正能够理解和欣赏的事物，只不过是一些在本质上和他自身相同的事物罢了。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./images/case1.jpg" alt="" />
+                    <!-- caption：图片说明 -->
+                    <div class="caption text-center">
+                        <h4>人生的智慧</h4>
+                        <p>人们最终所真正能够理解和欣赏的事物，只不过是一些在本质上和他自身相同的事物罢了。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./images/case2.jpg" alt="" />
+                    <!-- caption：图片说明 -->
+                    <div class="caption text-center">
+                        <h4>人生的智慧</h4>
+                        <p>人们最终所真正能够理解和欣赏的事物，只不过是一些在本质上和他自身相同的事物罢了。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./images/case3.jpg" alt="" />
+                    <!-- caption：图片说明 -->
+                    <div class="caption text-center">
+                        <h4>人生的智慧</h4>
+                        <p>人们最终所真正能够理解和欣赏的事物，只不过是一些在本质上和他自身相同的事物罢了。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="thumbnail">
+                    <img src="./images/case4.jpg" alt="" />
+                    <!-- caption：图片说明 -->
+                    <div class="caption text-center">
+                        <h4>人生的智慧</h4>
+                        <p>人们最终所真正能够理解和欣赏的事物，只不过是一些在本质上和他自身相同的事物罢了。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 资讯页主体内容部分 END -->
+
+<!-- 底部 START -->
+<div id="footer">
+    <div class="container text-center">
+        <p>企业培训 | 合作事宜 | 版权投诉</p>
+        <p>滇ICP备12345678. © 2010-2017 悦心物语. Powered by Bootstrap.</p>
+    </div>
+</div>
+<!-- 底部 END -->
+
+<!--顶部模态框 START-->
+<!-- 模态框声明 -->
+<!-- 说明：tabindex="-1"为取消焦点，也就是按键盘ESC关闭模态框 -->
+<!-- 说明：fade为淡入淡出效果 -->
+<div class="modal fade" id="member" tabindex="-1" role="dialog" aria-labelledby="member">
+    <!-- 窗口声明 -->
+    <!-- 说明：modal-sm为小号弹窗；modal-lg为大号弹窗 -->
+    <div class="modal-dialog modal-sm">
+        <!-- 内容声明 -->
+        <div class="modal-content">
+            <!-- 模态框头部 -->
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                <h4>会员登录</h4>
+            </div>
+
+            <!-- 模态框内容 -->
+            <div class="modal-body">
+                <!-- 设置流体效果 -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">1</div>
+                        <div class="col-md-4">2</div>
+                        <div class="col-md-4">3</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 模态框底部 -->
+            <div class="modal-footer">
+                <button class="btn btn-default">注册</button>
+                <button class="btn btn-primary">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--顶部模态框 END-->
+
+<script>
+/*轮播器 START*/
+// 设置自动轮播
+$('#myCarousel').carousel({
+    interval: 3000
+});
+/*轮播器 END*/
+</script>
+</body>
+</html>

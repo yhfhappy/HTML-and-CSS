@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body>
+
+<!-- 模态框 -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav">
+    <li class="active"><a href="#">综述</a></li>
+    <li><a href="#">简述</a></li>
+    <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">特点<span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#tab-Chrome">Chrome</a></li>
+            <li><a href="#tab-Firefox">Firefox</a></li>
+            <li><a href="#tab-Opera">Opera</a></li>
+            <li><a href="#tab-Safari">Safari</a></li>
+            <li><a href="#tab-IE">IE</a></li>
+        </ul>
+    </li>
+    <li><a href="#" data-toggle="modal" data-target="#about">关于</a></li>
+</ul>
+</div>
+
+<!--顶部关于按钮弹出窗-->
+<div class="modal fade" id="about">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">这是一个仿慕课网的一个项目</h4>
+            </div>
+            <div class="modal-body">
+                这是我2016年9月22号仿造慕课网做的第一个项目，以后会练习更多的项目。
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

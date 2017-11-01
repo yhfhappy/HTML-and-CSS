@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body style="margin:50px 200px 50px 200px;">
+
+<!-- 1.well -->
+<!--说明：
+    1.well：内嵌效果；
+    2.well-sm和well-lg：控制大小
+-->
+<div class="well well-sm">bootstrap</div>
+
+<!-- 2.progress -->
+<div class="progress">
+    <div class="progress-bar" style="width:70%;">70%</div>
+</div>
+
+<div class="progress">
+    <div class="progress-bar" style="min-width:30px;width:0%;">0%</div>
+</div>
+
+<div class="progress">
+    <div class="progress-bar" style="min-width:30px;width:60%;">60%</div>
+</div>
+
+<div class="progress">
+    <div class="progress-bar progress-bar-success" style="min-width:30px;width:60%;">60%</div>
+</div>
+
+<!-- progress-bar-striped：条纹状进度条 -->
+<div class="progress">
+    <div class="progress-bar progress-bar-success progress-bar-striped" style="min-width:30px;width:60%;">60%</div>
+</div>
+
+<!-- active：动画效果的进度条。必须是条纹状进度条 -->
+<div class="progress">
+    <div class="progress-bar progress-bar-success progress-bar-striped active" style="min-width:30px;width:60%;">60%</div>
+</div>
+
+<!-- 堆叠效果 -->
+<div class="progress">
+    <div class="progress-bar progress-bar-warning progress-bar-striped" style="min-width:20px;width:40%;">40%</div>
+    <div class="progress-bar progress-bar-info    progress-bar-striped" style="min-width:20px;width:80%;">80%</div>
+    <div class="progress-bar progress-bar-success progress-bar-striped" style="min-width:20px;width:100%;">100%</div>
+</div>
+
+<hr />
+
+<!-- 3.媒体对象 -->
+<div class="media">
+    <!-- 左边图片部分 -->
+    <!-- media-left/media-right -->
+    <!-- meida-top/meida-middle/meida-bottom -->
+    <div class="media-left media-middle">
+        <img src="../images/behappy.jpg" width=60px;height=60px; />
+    </div>
+
+    <!-- 内容部分：media-body -->
+    <div class="media-body">
+        <!-- 标题部分：media-heading -->
+        <h4 class="media-heading">内容标题</h4>
+        <p>你要成为自己的支撑，无论命运多么出其不意。</p>
+    </div>
+</div>
+
+<hr />
+
+<!-- 媒体对象列表 -->
+<ul class="media-list">
+    <li class="media">
+        <div class="media-left media-top">
+            <img src="../images/behappy.jpg" width=60px;height=60px; class="media-object" />
+        </div>
+
+        <div class="media-body">
+            <h4 class="media-heading">内容标题</h4>
+            <p>你要成为自己的支撑，无论命运多么出其不意。</p>
+
+            <!-- 嵌套 -->
+            <div class="media">
+                <div class="media-left media-top">
+                    <img src="../images/behappy.jpg" width=60px;height=60px; class="media-object" />
+                </div>
+                
+                <div class="media-body">
+                    <h4 class="media-heading">内容标题</h4>
+                    <p>你要成为自己的支撑，无论命运多么出其不意。</p>
+                    <p>你要成为自己的支撑，无论命运多么出其不意。</p>
+                    <p>你要成为自己的支撑，无论命运多么出其不意。</p>
+                    <p>你要成为自己的支撑，无论命运多么出其不意。</p>
+                </div>
+            </div>
+        </div>
+    </li>
+
+    <li class="media">
+        <div class="media-left media-top">
+            <img src="../images/behappy.jpg" width=60px;height=60px; class="media-object" />
+        </div>
+
+        <div class="media-body">
+            <h4 class="media-heading">内容标题</h4>
+            <p>你要成为自己的支撑，无论命运多么出其不意。</p>
+        </div>
+    </li>
+</ul>
+
+</body>
+</html>

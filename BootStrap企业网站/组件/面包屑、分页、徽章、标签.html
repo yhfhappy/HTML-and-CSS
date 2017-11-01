@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body style="margin:50px 200px 50px 200px;">
+
+<!-- 1.面包屑导航 -->
+<!--说明：
+    1.breadcrumb：父容器主控件
+    2.active：首选项
+-->
+<ol class="breadcrumb">
+    <li><a href="#">首页</a></li>
+    <li><a href="#">产品列表</a></li>
+    <li class="active">文章标题……</li>
+</ol>
+
+<hr />
+
+<!-- 2.分页组件 -->
+<!--说明：
+    1.pagination：父容器主控件
+    2.active：首选项
+    3.disabled：禁用
+-->
+<ul class="pagination pagination-lg">
+    <li><a href="#">&laquo;</a></li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li class="disabled"><a href="#">5</a></li>
+    <li><a href="#">6</a></li>
+    <li><a href="#">&raquo;</a></li>
+</ul>
+
+<!-- 只有“上一页”和“下一页”的翻页 -->
+<!--说明：
+    1.pager：父容器主控件（默认在中间）
+    2.previous：上一页控件
+    3.next：下一页控件
+-->
+<ul class="pager">
+    <li><a href="#">上一页</a></li>
+    <li><a href="#">下一页</a></li>
+</ul>
+
+<ul class="pager">
+    <li class="previous"><a href="#">上一页</a></li>
+    <li class="next"><a href="#">下一页</a></li>
+</ul>
+
+<hr />
+
+<!-- 3.标签 -->
+<!-- 说明：标签和标题的大小会跟着变 -->
+<h4>标签<span class="label label-success">new</span></h4>
+
+<hr />
+
+<!-- 4.徽章 -->
+<!-- 第一种：a链接形式 -->
+<a href="#">信息<span class="badge">3</span></a>
+
+<br /><br /><!-- 第二种：button形式 -->
+<button class="btn btn-default">
+    提交 <span class="badge">3</span>
+</button>
+
+</body>
+</html>

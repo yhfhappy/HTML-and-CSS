@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body>
+
+<!-- 模态框 -->
+<button id="myMember" class="btn btn-primary" data-toggle="modal" data-target="#member">会员中心</button>
+
+<!--顶部模态框 START-->
+<!-- 模态框声明 -->
+<!-- 说明：tabindex="-1"为取消焦点，也就是按键盘ESC关闭模态框 -->
+<!-- 说明：fade为淡入淡出效果 -->
+<div class="modal fade" id="member" tabindex="-1">
+    <!-- 窗口声明 -->
+    <!-- 说明：modal-sm为小号弹窗；modal-lg为大号弹窗 -->
+    <div class="modal-dialog modal-sm">
+        <!-- 内容声明 -->
+        <div class="modal-content">
+            <!-- 模态框头部 -->
+            <div class="modal-header">
+                <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                <h4>会员登录</h4>
+            </div>
+
+            <!-- 模态框内容 -->
+            <div class="modal-body">
+                <!-- 设置流体效果 -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-4">1</div>
+                        <div class="col-md-4">2</div>
+                        <div class="col-md-4">3</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 模态框底部 -->
+            <div class="modal-footer">
+                <button class="btn btn-default">注册</button>
+                <button class="btn btn-primary">登录</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--顶部模态框 END-->
+
+</body>
+</html>

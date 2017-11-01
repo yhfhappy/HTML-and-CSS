@@ -1,0 +1,343 @@
+/* 
+* @Author: YHF
+* @Date:   2017-10-17 05:20:44
+* @Last Modified by:   YHF
+* @Last Modified time: 2017-10-18 21:40:58
+*/
+@charset "utf-8";
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+/* 控制LOGO部分图片的位置，默认下滑了 */
+#logo a{
+    padding: 0;
+}
+
+#navList{
+    margin-left: 200px;
+}
+
+#myMember{
+    margin-left: 10px;
+}
+
+#myMember a{
+    color: #000;
+    text-decoration: none;
+    /*bootstrap里面按钮里面的a链接有边框*/
+    outline: none;
+}
+
+/* 轮播图避免被固定定位的头部覆盖 */
+/*#myCarousel{
+    margin-top: 50px;
+}*/
+
+/* 设置轮播图水平居中 */
+.carousel-inner img{
+    margin: 0 auto;
+}
+
+/* 设置图片的颜色过渡 */
+.lgImg-1{
+    background-color: #243442;
+}
+
+.lgImg-2{
+    background-color: #F5E5DD;
+}
+
+.lgImg-3{
+    background-color: #DC292C;
+}
+
+/* mini图标导航 */
+.miniNavWrap{
+    margin: 15px 0 50px 0;
+}
+
+.miniNav{
+    font-size: 13px;
+    color: #CDCAC8;
+    height: 92px;
+    background-color: #5F5750;
+    transition: 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.borderFirst{
+    border-bottom: 1px solid #665E57;
+}
+
+.borderSecond{
+    border-left: 1px solid #665E57;
+    border-right: 1px solid #665E57;
+}
+
+.miniNav:hover{
+    color: #FFF;
+}
+
+.miniNav i{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.goodChoose{
+    box-sizing: border-box;
+}
+
+.imgDiv{
+    transition: 0.2s;
+    margin: 15px 0 28px 0;
+}
+
+.imgDiv img{
+    width: 100%;
+    height: 186px;
+}
+
+.imgDiv:hover{
+    box-shadow: 2px 2px 26px rgba(0,0,0,0.2);
+}
+
+.miniSlide img{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.tuijian a{
+    color: #000;
+    text-decoration: none;
+}
+
+.marginBottom{
+    margin-bottom: 30px;
+}
+
+/* 资讯页主体内容部分 START */
+/* 资讯业顶部banner START */
+.jumbotron{
+    background-image: url(../images/bg.jpg);
+    margin: 50px 0 0 0;
+    color: #CCC;
+}
+
+.jumbotron hgroup{
+    padding: 0 0 0 30px;
+}
+
+.jumbotron h1{
+    font-size: 36px;
+}
+
+.jumbotron h4{
+    font-size: 18px;
+}
+/* 资讯业顶部banner END */
+
+/* information */
+#information{
+    background-color: #eee;
+    padding: 40px 0;
+}
+
+/* info-content */
+.info-content{
+    background-color: #FFF;
+    margin: 0 0 20px 0;
+    box-shadow: 2px 2px 3px #CCC;
+}
+
+.info-content img{
+    margin: 12px 0;
+}
+
+.info-content h4{
+    color: #333;
+    padding: 10px 0 0 0;
+    font-size: 20px;
+}
+
+.info-content p{
+    line-height: 1.6;
+}
+
+/* info-right */
+.info-right{
+    background-color: #FFF;
+    box-shadow: 2px 2px 3px #CCC;
+}
+
+.info-right blockquote{
+    margin: 0;
+    padding: 0;
+}
+
+.info-right h2{
+    font-size: 20px;
+    color: #333;
+    padding: 5px;
+}
+
+.info-right h4{
+    color: #333;
+    font-size: 16px;
+    padding: 10px 0 0 0;
+    line-height: 1.6;
+}
+
+/* case */
+#case{
+    padding: 40px 0;
+    background-color: #eee;
+}
+
+#case p{
+    color: #666;
+    line-height: 1.6;
+}
+
+/* about */
+#about{
+    background-color: #eee;
+    padding: 40px 15px;
+}
+
+#about a{
+    color: #0059b2;
+}
+
+#about .about{
+    background-color: #FFF;
+    box-shadow: 2px 2px 3px #CCC;
+}
+
+#about h3 {
+    margin: 0 0 10px 0;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;  
+    font-size: 18px;
+}
+#about p {
+    line-height: 2;
+    font-size: 13px;
+}
+
+/* 资讯页主体内容部分 END */
+
+/* 页面底部 */
+#footer{
+    color: #eee;
+    padding: 10px;
+    background-color: #666;
+}
+
+/* information */
+.marginTop_50{
+    margin-top: 50px;
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+    .info-content h4 {
+        font-size: 16px;
+    }
+    .jumbotron h1 {
+        font-size: 30px;
+    }
+    .jumbotron h4 {
+        font-size: 16px;
+    }
+    #about h3 {
+        font-size: 19px;
+    }
+    #about p {
+        font-size: 14px;
+    }
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+    .text h3 {
+        font-size: 24px;
+    }
+    .text p {
+        font-size: 16px;
+    }
+    .tab2-text {
+        float: left;
+    }
+    .tab2-img {
+        float: right;
+    }
+    .info-content h4 {
+        font-size: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .info-right h4 {
+        font-size: 14px;
+    }
+    .jumbotron h1 {
+        font-size: 33px;
+    }
+    .jumbotron h4 {
+        font-size: 17px;
+    }
+    #about h3 {
+        font-size: 20px;
+    }
+    #about p {
+        font-size: 15px;
+    }
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+    .text h2 {
+        font-size: 26px;
+    }
+    .text p {
+        font-size: 18px;
+    }
+    .tab2-text {
+        float: left;
+    }
+    .tab2-img {
+        float: right;
+    }
+    .info-content h4 {
+        font-size: 20px;
+        /*提示：以下设置为超出部分显示三个点*/
+        overflow: hidden;
+        white-space: nowrap;/*只能显示一行*/
+        text-overflow: ellipsis;/*多余部分用三个点代替*/
+    }
+    .info-right h4 {
+        font-size: 16px;
+    }
+
+    /*资讯业顶部banner标题*/
+    .jumbotron h1 {
+        font-size: 36px;
+    }
+    .jumbotron h4 {
+        font-size: 18px;
+    }
+
+    #about h3 {
+        font-size: 22px;
+    }
+    #about p {
+        font-size: 16px;
+    }
+}
